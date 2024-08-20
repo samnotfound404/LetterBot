@@ -2,6 +2,14 @@
 
 This project is a Django-based application that enables users to create and receive customized letters via WhatsApp using Twilio's messaging API. The bot interacts with users through a series of prompts to gather necessary details for generating a PDF letter, which is then sent back to the user.
 
+## Demo Video
+
+
+
+https://github.com/user-attachments/assets/ec902140-aeed-4430-bda2-7420ff2a141e
+
+
+*Note: The above is a short demonstration of how the Letter Generation Bot works.*
 ## Features
 
 - **Interactive Letter Creation**: Users can create a letter by responding to a series of prompts via WhatsApp.
