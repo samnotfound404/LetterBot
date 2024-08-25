@@ -32,8 +32,8 @@ https://github.com/user-attachments/assets/ec902140-aeed-4430-bda2-7420ff2a141e
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/letter-generation-bot.git
-    cd letter-generation-bot
+    git clone https://github.com/samnotfound404/LetterBot.git
+    cd Bot
     ```
 
 2. **Install dependencies:**
@@ -41,27 +41,37 @@ https://github.com/user-attachments/assets/ec902140-aeed-4430-bda2-7420ff2a141e
     ```bash
     pip install -r requirements.txt
     ```
+### 3. Set up Virtual environment
+```bash
+python -m venv env
 
-3. **Configure Django settings:**
+env\Scripts\activate
+
+```
+### 4. Configure settings.py
+       add your credentials in settings.py
+
+
+5. **Configure Django settings:**
 
     - Update the `settings.py` file with your database configurations, Twilio credentials, and other settings like `MEDIA_ROOT` and `MEDIA_URL`.
     - Ensure `wkhtmltopdf` is correctly installed and its path is specified in the `letter()` function.
 
-4. **Migrate the database:**
+6. **Migrate the database:**
 
     ```bash
     python manage.py migrate
     ```
 
-5. **Run the server:**
+7. **Run the server:**
 
     ```bash
     python manage.py runserver
     ```
 
-6. **Setup Twilio Webhook:**
+8. **Setup Twilio Webhook:**
 
-    - In your Twilio console, set up a webhook for incoming messages pointing to your server's `/process_letter_request/` endpoint.
+    - In your Twilio console, set up a webhook for incoming messages .
 
 ## Usage
 
